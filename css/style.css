@@ -26,13 +26,22 @@ header .nav-head {
 }
 
 .nav-head .contact-nav {
-    padding: 0px 10px;
+    padding: 20px 10px;
 }
 
 .contact-nav a {
     margin-left: 15px;
     color: #fff;
     text-decoration: none;
+}
+
+.nav-head .networks-nav{
+    padding-top: 5px;
+}
+
+.networks-nav i{
+    font-size: 1.3rem;
+    margin-left: 20px;
 }
 
 .nav-header {
@@ -125,7 +134,7 @@ header .nav-head {
     }
 
     .nav.active{
-        height: 60vh;
+        height: 62vh;
         background-color: #3A9805;
         padding-top: 0px;
     }
@@ -134,17 +143,22 @@ header .nav-head {
         display: block;
     }
 
-    .nav li{
-    }
-
     .hamburger{
         display: block;
         color: #ffffff;
         padding: 6px 20px;
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
-
     .hamburger .fa-bars{
         display: block;
+    }
+    .hamburger .fa-times{
+        display: none;
+    }
+    .hamburger.active .fa-times{
+        display: block;
+    }
+    .hamburger.active .fa-bars{
+        display: none;
     }
 }
