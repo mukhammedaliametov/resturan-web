@@ -1,4 +1,150 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+/* header style */
+:root{
+    color: #3A9805;
+}
+
+* {
     box-sizing: border-box;
     font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header .nav-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E2E60;
+    padding: 11px;
+}
+
+.nav-head .contact-nav {
+    padding: 0px 10px;
+}
+
+.contact-nav a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-header {
+    padding: 0px 10px;
+}
+
+.nav-head .networks-nav {
+    margin: 0px 20px;
+} 
+
+.nav-head a {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.navigaiton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3A9805;
+}
+
+.logo{
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px;
+}
+
+.navigaiton .nav{
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav li{
+    margin: 0px 20px;
+    list-style-type: none;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #dfdfdf;
+    transition: .5s ease-in-out;
+}
+
+.nav a:hover{
+    color: #fff;
+}
+
+.hamburger{
+    display: none;
+}
+
+/* header responsive style */
+@media only screen and (max-width: 920px){
+    .nav-head{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0;
+    }
+
+    .nav-head .contact-nav{
+        padding: 10px 0px;
+        margin-bottom: 5px;
+    }
+
+    .contact-nav a{
+        font-size: 1rem;
+    }
+
+    .navigaiton .nav{
+        position: absolute;
+        flex-direction: column;
+        left: 0;
+        background-color: #3b9805;
+        top: 160px;
+        width: 100%;
+        text-align: center;
+        height: 0vh;
+        padding-top: 0px;
+        transition: .5s ease-in-out;
+    }
+
+    .nav a{
+        display: none;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #fff;
+        padding: 50px 0px;
+    }
+
+    .nav.active{
+        height: 58vh;
+        background-color: #3A9805;
+        padding-top: 0px;
+    }
+
+    .nav.active a{
+        display: block;
+    }
+
+    .nav li{
+    }
+
+    .hamburger{
+        display: block;
+        color: #ffffff;
+        padding: 6px 20px;
+        font-size: 1.5rem;
+    }
+
+    .hamburger .fa-bars{
+        display: block;
+    }
 }
