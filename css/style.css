@@ -121,11 +121,15 @@ header .nav-head {
         flex-direction: column;
         left: 0;
         background-color: #3b9805;
-        margin-top: 659px;
+        top: 150px;
         width: 0%;
         text-align: center;
-        height: 75vh;
+        height: 59vh;
         transition: .5s ease-in-out;
+    }
+
+    .navigation.sticky .nav{
+        top: 58px;
     }
 
     .nav a{
