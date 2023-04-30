@@ -121,10 +121,10 @@ header .nav-head {
         flex-direction: column;
         left: 0;
         background-color: #3b9805;
-        margin-top: 605px;
+        margin-top: 598px;
         width: 0%;
         text-align: center;
-        height: 63vh;
+        height: 62vh;
         transition: .5s ease-in-out;
     }
 
@@ -175,5 +175,73 @@ header .nav-head {
     min-height: 100vh;
     background-attachment: fixed;
     box-shadow: inset 0 0 0 1000px #0000008e;
+}
+
+#home .home-title{
+    padding: 110px 90px;
+    width: 50%;
+}
+
+.home-title h1{
+    font-size: 3rem;
+    color: #ffff;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 20px 0px;
+}
+
+.home-title p{
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 0px 10px;
+}
+
+.home-title .buttons{
+    padding: 30px 0px;
+}
+
+.buttons .menu-btn{
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 0px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #fff;
+}
+
+.menu-btn:hover{
+    background-color: #3A9805;
+    border: none;
+    padding: 12px 22px;
+}
+
+.buttons .video-btn{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.video-btn:hover{
+    color: #3A9805;
+}
+
+.fa-circle-play{
+    font-size: 1.5rem;
+}
+
+/* Home responsive style */
+@media only screen and (max-width: 920px){
+    #home .home-title{
+        padding: 150px 30px;
+        width: 90%;
+    }
+
+    .home-title h1{
+        font-size: 2rem;
+        color: #ffff;
+        font-family: 'Ubuntu', sans-serif;
+        padding: 20px 0px;
+    }
 }
 /* End of home style */
