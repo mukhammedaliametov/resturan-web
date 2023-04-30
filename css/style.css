@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
 
-/* header style */
-:root{
-    color: #3A9805;
-}
-
 * {
     box-sizing: border-box;
     font-family: sans-serif;
@@ -12,6 +7,7 @@
     margin: 0;
 }
 
+/* header style */
 header {
     box-sizing: border-box;
     width: 100%;
@@ -22,7 +18,7 @@ header .nav-head {
     justify-content: space-between;
     align-items: center;
     background-color: #1E2E60;
-    padding: 11px;
+    padding: 0px 11px;
 }
 
 .nav-head .contact-nav {
@@ -40,7 +36,7 @@ header .nav-head {
 }
 
 .networks-nav i{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-left: 20px;
 }
 
@@ -58,11 +54,18 @@ header .nav-head {
     color: #fff;
 }
 
-.navigaiton{
+.navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #3A9805;
+    z-index: 999;
+}
+
+.navigation.sticky{
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 .logo{
@@ -72,7 +75,7 @@ header .nav-head {
     padding: 20px;
 }
 
-.navigaiton .nav{
+.navigation .nav{
     display: flex;
     margin-right: 20px;
 }
@@ -98,31 +101,30 @@ header .nav-head {
 
 /* header responsive style */
 @media only screen and (max-width: 920px){
-    .nav-head{
+    header .nav-head{
         flex-direction: column;
-        padding: 0px;
         margin: 0;
+        padding: 12px;
     }
 
     .nav-head .contact-nav{
         padding: 10px 0px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     .contact-nav a{
         font-size: 1rem;
     }
 
-    .navigaiton .nav{
+    .navigation .nav{
         position: absolute;
         flex-direction: column;
         left: 0;
         background-color: #3b9805;
-        top: 160px;
-        width: 100%;
+        margin-top: 605px;
+        width: 0%;
         text-align: center;
-        height: 0vh;
-        padding-top: 0px;
+        height: 63vh;
         transition: .5s ease-in-out;
     }
 
@@ -134,9 +136,9 @@ header .nav-head {
     }
 
     .nav.active{
-        height: 62vh;
         background-color: #3A9805;
         padding-top: 0px;
+        width: 100%;
     }
 
     .nav.active a{
@@ -162,3 +164,16 @@ header .nav-head {
         display: none;
     }
 }
+
+/* End of header style */
+/* Start of home style */
+#home{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px #0000008e;
+}
+/* End of home style */
