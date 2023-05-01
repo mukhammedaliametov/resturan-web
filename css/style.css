@@ -424,10 +424,28 @@ header .nav-head {
     border-bottom: 2px solid #3A9805;
 }
 
+.food-info .food-name{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 20px;
+    color: #fff;
+    background-color: #00000083;
+    padding: 10px;
+    border-radius: 10px;
+}
+
 /* menu responsive style */
 @media only screen and (max-width: 920px){
     #menu{
         padding: 20px 10px;
+    }
+
+    #menu .menu-buttons{
+        display: none;
+    }
+
+    .menu-buttons a{
+        margin: 130px 10px;
     }
 
     #menu .food-info{
@@ -448,6 +466,136 @@ header .nav-head {
         padding: 20px 10px;
         width: 100%;
     }
+
+    .food-info .food-name{
+        position: absolute;
+        margin-top: 6%;
+        margin-left: -68%;
+        color: #fff;
+        background-color: #00000083;
+        padding: 10px;
+        border-radius: 10px;
+    }
 }
 /* End of menu style */
+/* Start of contact style */
+#contact{
+    padding: 30px 100px;
+}
+
+#contact .location{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#contact .contact-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 2px solid #3A9805;
+}
+
+.contact-info a{
+    color: #fff;
+    background-color: #3A9805;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
+
+#contact form{
+    padding: 10px 30px;
+    flex-direction: column;
+}
+
+form .form-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-item label{
+    padding: 10px;
+    color: #3A9805;
+    font-size: 1.1rem;
+}
+
+.form-item input{
+    width: 70vh;
+    height: 40px;
+    margin: 14px 0px;
+    font-size: 1.1rem;
+    padding: 20px 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+#contact textarea{
+    color: #111;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid #111;
+    border-radius: 15px;
+    resize: none;
+}
+
+#contact button{
+    width: 100%;
+    height: 50px;
+    font-size: 1.1rem;
+    color: #fff;
+    background-color: #3A9805;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#contact button:active{
+    background: #fff;
+    color: #3A9805;
+}
+
+/* contact responsive style */
+@media only screen and (max-width: 920px){
+    #contact{
+        padding: 10px 10px;
+    }
+
+    .form-item{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-item input{
+        width: 100%;
+    }
+
+    #contact form{
+        padding: 10px 0px;
+        flex-direction: column;
+    }
+
+    form .form-item{
+        padding: 0;
+    }
+
+    .contact-info{
+        flex-direction: column;
+        padding: 0;      
+    }
+
+    .contact-info a{
+        width: 100%;
+        text-align: center;
+        margin: 10px 0px;
+    }
+}
+/* End of contact style */
 
