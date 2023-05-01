@@ -121,7 +121,7 @@ header .nav-head {
         flex-direction: column;
         left: 0;
         background-color: #3b9805;
-        top: 151px;
+        top: 153px;
         width: 0%;
         text-align: center;
         height: 69vh;
@@ -148,6 +148,10 @@ header .nav-head {
 
     .nav.active a{
         display: block;
+    }
+
+    .nav.active .nav-mobile-item{
+        margin-top: 40px;
     }
 
     .hamburger{
@@ -205,13 +209,14 @@ header .nav-head {
 }
 
 .buttons .menu-btn{
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     margin: 20px 0px;
     padding: 10px 20px;
+    background: none;
     border-radius: 10px;
     font-size: 1.2rem;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
 }
 
 .menu-btn:hover{
@@ -344,7 +349,7 @@ header .nav-head {
     background-color: #3A9805;
     color: #fff;
 }
-/* Start of about responsive style */
+/* About responsive style */
 @media only screen and (max-width: 920px){
     #about{
         flex-direction: column;
@@ -365,4 +370,84 @@ header .nav-head {
     }
 }
 /* End of about style */
+/* Start of menu style */
+#menu{
+    padding: 20px 50px;
+}
+
+#menu .menu-buttons{
+    text-align: center;
+    padding: 10px;
+}
+
+.menu-btn{
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 8px 20px;
+    background-color: #fff;
+    border: 2px solid #3A9805;
+    color: #3b9805;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+}
+
+.menu-btn:hover{
+    color: #fff;
+    background-color: #3A9805;
+}
+
+#menu .food-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+}
+
+.food-info .food-img{
+    width: 50%;
+    border-radius: 20px;
+}
+
+.food-info .foods{
+    width: 80%;
+    padding: 30px 70px;
+}
+
+.foods .food-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    border-bottom: 2px solid #3A9805;
+}
+
+/* menu responsive style */
+@media only screen and (max-width: 920px){
+    #menu{
+        padding: 20px 10px;
+    }
+
+    #menu .food-info{
+        flex-direction: column;
+        padding: 30px 0px;
+    }
+
+    .food-info .food-img{
+        width: 100%;
+    }
+
+    .food-info .foods{
+        width: 100%;
+        padding: 30px 10px;
+    }
+
+    .foods .food-content{
+        padding: 20px 10px;
+        width: 100%;
+    }
+}
+/* End of menu style */
 
