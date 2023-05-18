@@ -254,7 +254,8 @@ header .nav-head {
     
     #home .home-title{
         padding: 150px 30px;
-        width: 90%;
+        width: 100%;
+        margin: 0px;
     }
 
     .home-title h1{
@@ -480,7 +481,7 @@ header .nav-head {
     .food-info .food-name{
         position: absolute;
         margin-top: 6%;
-        margin-left: -68%;
+        margin-left: -58%;
         color: #fff;
         background-color: #00000083;
         padding: 10px;
@@ -675,9 +676,9 @@ footer .second-footer{
     footer .second-footer{
         border-top: none;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         text-align: left;
-        padding: 10px 0px;
+        padding: 0px 20px;
     }
 }
 /* End of footer style */
