@@ -1,471 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is a project is created developer Mukhammedali Ametov -->
 
-  <!-- This is a project is created developer Mukhammedali Ametov -->
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="./images/headicon.png"
+      type="image/x-icon"
+    />
 
-  <!-- Icon -->
-  <link rel="shortcut icon" href="./images/headicon.png" type="image/x-icon">
+    <!-- Website name -->
+    <title>Resturan</title>
 
-  <!-- Website name -->
-  <title>Resturan</title>
+    <!-- Css -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-  <!-- Css -->
-  <link rel="stylesheet" href="./css/style.css">
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <!-- Font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-</head>
-
-<body>
-  <!-- Start of header -->
-  <header>
-    <div class="nav-head">
-      <div class="contact-nav">
-        <a href=""><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
+  <body>
+    <!-- Start of header -->
+    <header>
+      <div class="nav-head">
+        <div class="contact-nav">
+          <a href=""><i class="fa-solid fa-envelope"></i> example@gmail.com</a>
+          <a href=""><i class="fa-solid fa-phone"></i> +998(99)000-00-00</a>
+        </div>
+        <div class="networks-nav">
+          <a href=""><i class="fa-brands fa-telegram"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="navigation">
+        <h1 class="logo">Nks.Restaran <i class="fa-solid fa-utensils"></i></h1>
+        <ul class="nav">
+          <li id="closeitem" onclick="closeMenu()" class="nav-mobile-item">
+            <a href="#home"> <i class="fas fa-home"></i> Bas bo'lim </a>
+          </li>
+          <li id="closeitem" onclick="closeMenu()">
+            <a href="#about-link">
+              <i class="fa-solid fa-circle-info"></i> Biz haqqimizda
+            </a>
+          </li>
+          <li id="closeitem" onclick="closeMenu()">
+            <a href="#menu-link"> <i class="fa-solid fa-book"></i> Menyu </a>
+          </li>
+          <li id="closeitem" onclick="closeMenu()">
+            <a href="#contact-link" style="border-bottom: 0px">
+              <i class="fa-solid fa-address-book"></i> Baylanis
+            </a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-times"></i>
+        </div>
+      </div>
+    </header>
+    <!-- End of header -->
+    <!-- Start of Home section -->
+    <section id="home">
+      <div class="home-title">
+        <h1>Nks.Restaran Web-Sayti</h1>
+        <p>
+          Web-saytqa xosh kelibsiz. Bul web-sayt arqali o'zin'iz jaqtirg'an
+          tag'amin'izdi buyirtpa qilsan'iz boladi.
+        </p>
+        <div class="buttons">
+          <a href="" class="menu-btn"><i class="fa-solid fa-book"></i> Menyu</a>
+          <a href="" class="video-btn"
+            ><i class="fa-regular fa-circle-play"></i> Videoni Ko'riw</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End of Home section -->
+    <div class="section-title" id="about-link">
+      <h1>Biz haqqimizda</h1>
+    </div>
+    <!-- Start of About section -->
+    <section id="about">
+      <div class="image">
+        <img src="./images/about-image.jpg" alt="about-image" />
+        <span class="img-border"></span>
+        <span class="img-border2"></span>
+      </div>
+      <div class="about-title">
+        <h1>Nks.Restaran <i class="fa-solid fa-utensils"></i></h1>
+        <p>Nks.Restaran haqqinda web-sayt ushin qisqasha magliwmat</p>
+        <span>
+          Restoran - bul klientlerge azıq-túlik hám ishimlikler tayarlaytugın
+          hám xızmet etetugın biznes. Awqatlar ádetde ımaratlarda usınıs etiledi
+          hám tutınıw etiledi, lekin kóplegen restoranlarda alıp ketiw hám
+          azıq-túlik jetkiziw xızmetlerin de usınıs etiledi. modelleri. </span
+        ><br /><br />
+        <span>
+          Restoranlar sırtqı kórinisi hám usınısları boyınsha júdá túrme-túr
+          bolıp tabıladı, atap aytqanda, arzan fast-fud restoranlari hám
+          kafeteryalardan tartıp ortasha bahalar dagı shańaraqqa tiyisli
+          restoranlargacha, joqarı baholi sánatli mákemelerge shekem bolgan hár
+          qıylı asxanalar hám xızmet kórsetiw </span
+        ><br /><br /><br />
+        <a href="" class="about-btn">Toliq mag'liwmat</a>
+      </div>
+    </section>
+    <!-- End of About section -->
+    <div class="section-title" id="menu-link">
+      <h1>Menyu</h1>
+    </div>
+    <!-- Start of Menu section -->
+    <section id="menu">
+      <div class="menu-buttons">
+        <a href="#burgers" id="burgers-btn" class="menu-btn">Burgerler</a>
+        <a href="#dishes" id="dishes-btn" class="menu-btn">Dishes</a>
+        <a href="#granish" class="menu-btn">Granish</a>
+        <a href="#pita" class="menu-btn">Pita</a>
+        <a href="#pizza" class="menu-btn">Pizza</a>
+        <a href="#shashlik" class="menu-btn">Shashlik</a><br /><br /><br />
+        <a href="#soup" class="menu-btn">Soup</a>
+        <a href="#stake" class="menu-btn">Stake</a>
+        <a href="#manti" class="menu-btn">Manti</a>
+        <a href="#coffe" class="menu-btn">Coffe</a>
+        <a href="#tea" class="menu-btn">Tea</a>
+      </div>
+      <div class="food-info" id="burgers">
+        <h1 class="food-name">Burgerler</h1>
+        <img class="food-img" src="./images/foods/Burger.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Klassik burger</p>
+            <p>22 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Mayli Burger</p>
+            <p>25 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Tawıqlı burger</p>
+            <p>22 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Steyk burger</p>
+            <p>35 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Ekewlik burger</p>
+            <p>45 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="dishes">
+        <h1 class="food-name">Ha'r tu'rdegi</h1>
+        <img class="food-img" src="./images/foods/Dishes.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Assorted Edison</p>
+            <p>280 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Assorted Brazier</p>
+            <p>280 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Wasp Buka</p>
+            <p>240 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Stewed meat</p>
+            <p>48 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>KFC (portion)</p>
+            <p>25 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Chicken - 1 / 0.5 (kg)</p>
+            <p>80 000 / 45 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="granish">
+        <h1 class="food-name">Granish</h1>
+        <img class="food-img" src="./images/foods/Granish.jpeg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Free</p>
+            <p>12 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Rustic</p>
+            <p>12 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>toast</p>
+            <p>15 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="pita">
+        <h1 class="food-name">Lavash</h1>
+        <img class="food-img" src="./images/foods/Pita.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Lavash Beef</p>
+            <p>28 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Lavash Beef (with cheese)</p>
+            <p>30 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>tandoor Lavash</p>
+            <p>32 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Lavash Chicken</p>
+            <p>28 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Lavash Chicken (with cheese)</p>
+            <p>32 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="pizza">
+        <h1 class="food-name">Pitsa</h1>
+        <img class="food-img" src="./images/foods/pizza.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Meat</p>
+            <p>60 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Mexican</p>
+            <p>69 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Caesar</p>
+            <p>58 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>pepperoni</p>
+            <p>56 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Coffee with cream</p>
+            <p>8 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Sausage</p>
+            <p>52 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="shashlik">
+        <h1 class="food-name">Shashlik</h1>
+        <img class="food-img" src="./images/foods/Shashlik.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>minced shish kebab</p>
+            <p>14 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Shashlik gijduvan</p>
+            <p>16 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Beef skewers</p>
+            <p>17 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Chicken wings shish kebab</p>
+            <p>22 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="soup">
+        <h1 class="food-name">Sorpa</h1>
+        <img class="food-img" src="./images/foods/soup.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Soup Truffle Beef</p>
+            <p>25 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Soup Truffle Chicken</p>
+            <p>25 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Dumplings</p>
+            <p>25 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="stake">
+        <h1 class="food-name">Steyk</h1>
+        <img class="food-img" src="./images/foods/stake.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Ribeye steak (400 gr)</p>
+            <p>71 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Teebone steak (450 gr)</p>
+            <p>79 900 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Entrecote (300 gr)</p>
+            <p>63 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="manti">
+        <h1 class="food-name">Manti</h1>
+        <img class="food-img" src="./images/foods/Manti.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Homemade manti</p>
+            <p>26 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Manti with Meat</p>
+            <p>26 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Manti with tripe</p>
+            <p>25 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Manti with Pumpkin</p>
+            <p>19 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="coffe">
+        <h1 class="food-name">Coffe</h1>
+        <img class="food-img" src="./images/foods/coffe.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>Espresso coffee</p>
+            <p>12 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>cappuccino coffee</p>
+            <p>13 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Latte</p>
+            <p>13 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Coffee Americano</p>
+            <p>13 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Coffee with cream</p>
+            <p>8 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Black coffee</p>
+            <p>8 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+      <div class="food-info" id="tea">
+        <h1 class="food-name">Shayli ishimlik</h1>
+        <img class="food-img" src="./images/foods/tea.jpg" alt="" />
+        <div class="foods">
+          <div class="food-content">
+            <p>fruit tea</p>
+            <p>20 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Tea with lemon</p>
+            <p>10 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Tea with limber</p>
+            <p>22 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Tea with milk</p>
+            <p>8 000 UZS</p>
+          </div>
+          <div class="food-content">
+            <p>Green tea</p>
+            <p>5 000 UZS</p>
+          </div>
+          <button style="margin: 10px 0px" class="menu-btn">
+            Buyırtpa beriw
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- End of Menu section -->
+    <div class="section-title" id="contact-link">
+      <h1>Baylanis</h1>
+    </div>
+    <!-- Start of Contact section -->
+    <section id="contact">
+      <div class="location">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d358111.27828294015!2d59.75745030820312!3d42.46219826239883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suz!2s!4v1682952582219!5m2!1suz!2s"
+          width="1120"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div class="contact-info">
+        <a href=""><i class="fa-brands fa-telegram"></i> Telegram</a>
         <a href=""><i class="fa-solid fa-phone"></i> +998(99)000-00-00</a>
       </div>
-      <div class="networks-nav">
-        <a href=""><i class="fa-brands fa-telegram"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-facebook"></i></a>
-        <a href=""><i class="fa-brands fa-twitter"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-        <a href=""><i class="fa-brands fa-youtube"></i></a>
+      <form>
+        <div class="form-item">
+          <label for="name">
+            Ati <br />
+            <input id="name" type="text" placeholder="Palenshiev To'lenshe" />
+          </label>
+          <label for="phone">
+            Telefon Nomeri <br />
+            <input id="phone" type="text" placeholder="+998(99)000-00-00" />
+          </label>
+        </div>
+        <textarea placeholder="Jazin'" cols="30" rows="10"></textarea><br />
+        <button>J i b e r i w</button>
+      </form>
+    </section>
+    <!-- End of Contact section -->
+    <!-- Start of footer -->
+    <footer class="footer">
+      <div class="first-footer">
+        <h1 class="logo">Nks.Restaran <i class="fa-solid fa-utensils"></i></h1>
+        <div class="footer-item">
+          <span><i class="fa-solid fa-envelope"></i> Pochta manzili</span>
+          <p>example@gmail.com</p>
+          <p>Usi pochta ma'nzil arqali baylanissan'izda boladi!</p>
+        </div>
+        <div class="footer-item">
+          <span><i class="fa-solid fa-location-dot"></i> Ma'nzil</span>
+          <p>Karakalpakstan, Kanlikul, Diykhanabad 1 home</p>
+          <p>Bul bizdin' ma'nzilimiz</p>
+        </div>
       </div>
-    </div>
-    <div class="navigation">
-      <h1 class="logo">
-        Resturan <i class="fa-solid fa-utensils"></i>
-      </h1>
-      <ul class="nav">
-        <li id="closeitem" onclick="closeMenu()" class="nav-mobile-item">
-          <a href="#home">
-            <i class="fas fa-home"></i> Home
-          </a>
-        </li>
-        <li id="closeitem" onclick="closeMenu()">
-          <a href="#about-link">
-            <i class="fa-solid fa-circle-info"></i> About
-          </a>
-        </li>
-        <li id="closeitem" onclick="closeMenu()">
-          <a href="#menu-link">
-            <i class="fa-solid fa-book"></i> Menu
-          </a>
-        </li>
-        <li id="closeitem" onclick="closeMenu()">
-          <a href="#contact-link" style="border-bottom: 0px;">
-            <i class="fa-solid fa-address-book"></i> Contact
-          </a>
-        </li>
-      </ul>
-      <div class="hamburger">
-        <i class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-times"></i>
-      </div>
-    </div>
-
-  </header>
-  <!-- End of header -->
-  <!-- Start of Home section -->
-  <section id="home">
-    <div class="home-title">
-      <h1>Enjoy Your Helathy Deliciuos Food</h1>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam illum nemo rem suscipit laborum.
-        Excepturi, reprehenderit?</p>
-      <div class="buttons">
-        <a href="" class="menu-btn"><i class="fa-solid fa-book"></i> Menu</a>
-        <a href="" class="video-btn"><i class="fa-regular fa-circle-play"></i> Watch Video</a>
-      </div>
-    </div>
-  </section>
-  <!-- End of Home section -->
-  <div class="section-title" id="about-link">
-    <h1>About</h1>
-  </div>
-  <!-- Start of About section -->
-  <section id="about">
-    <div class="image">
-      <img src="./images/about-image.jpg" alt="about-image">
-      <span class="img-border"></span>
-      <span class="img-border2"></span>
-    </div>
-    <div class="about-title">
-      <h1>Resturan <i class="fa-solid fa-utensils"></i></h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error blanditiis ipsam odio iusto, inventore quasi
-        illum asperiores quam excepturi vel!
-      </span><br><br>
-      <span>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt libero similique et ratione sint eveniet quod
-        error quaerat rerum pariatur quae, numquam porro? Explicabo incidunt reiciendis nesciunt sequi, quia at.
-      </span><br><br><br>
-      <a href="" class="about-btn">See more</a>
-    </div>
-  </section>
-  <!-- End of About section -->
-  <div class="section-title"id="menu-link" >
-    <h1>Menu</h1>
-  </div>
-  <!-- Start of Menu section -->
-  <section id="menu">
-    <div class="menu-buttons">
-      <a href="#burgers" id="burgers-btn" class="menu-btn">Burgers</a>
-      <a href="#dishes" id="dishes-btn" class="menu-btn">Dishes</a>
-      <a href="#granish" class="menu-btn">Granish</a>
-      <a href="#pita" class="menu-btn">Pita</a>
-      <a href="#pizza" class="menu-btn">Pizza</a>
-      <a href="#shashlik" class="menu-btn">Shashlik</a><br><br><br>
-      <a href="#soup" class="menu-btn">Soup</a>
-      <a href="#stake" class="menu-btn">Stake</a>
-      <a href="#manti" class="menu-btn">Manti</a>
-      <a href="#coffe" class="menu-btn">Coffe</a>
-      <a href="#tea" class="menu-btn">Tea</a>
-    </div>
-    <div class="food-info" id="burgers">
-      <h1 class="food-name">Burgers</h1>
-      <img class="food-img" src="./images/foods/Burger.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Classic burger</p>
-          <p>22 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Burger with cheese</p>
-          <p>25 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>chicken burger</p>
-          <p>22 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Steak Burger</p>
-          <p>35 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>double burger</p>
-          <p>45 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="dishes">
-      <h1 class="food-name">Dishes</h1>
-      <img class="food-img" src="./images/foods/Dishes.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Assorted Edison</p>
-          <p>280 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Assorted Brazier</p>
-          <p>280 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Wasp Buka</p>
-          <p>240 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Stewed meat</p>
-          <p>48 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>KFC (portion)</p>
-          <p>25 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Chicken - 1 / 0.5 (kg)</p>
-          <p>80 000 / 45 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="granish">
-      <h1 class="food-name">Granish</h1>
-      <img class="food-img" src="./images/foods/Granish.jpeg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Free</p>
-          <p>12 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Rustic</p>
-          <p>12 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>toast</p>
-          <p>15 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="pita">
-      <h1 class="food-name">Pita</h1>
-      <img class="food-img" src="./images/foods/Pita.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Lavash Beef</p>
-          <p>28 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Lavash Beef (with cheese)</p>
-          <p>30 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>tandoor Lavash</p>
-          <p>32 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Lavash Chicken</p>
-          <p>28 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Lavash Chicken (with cheese)</p>
-          <p>32 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="pizza">
-      <h1 class="food-name">Pizza</h1>
-      <img class="food-img" src="./images/foods/pizza.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Meat</p>
-          <p>60 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Mexican</p>
-          <p>69 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Caesar</p>
-          <p>58 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>pepperoni</p>
-          <p>56 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Coffee with cream</p>
-          <p>8 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Sausage</p>
-          <p>52 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="shashlik">
-      <h1 class="food-name">Shashlik</h1>
-      <img class="food-img" src="./images/foods/Shashlik.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>minced shish kebab</p>
-          <p>14 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Shashlik gijduvan</p>
-          <p>16 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Beef skewers</p>
-          <p>17 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Chicken wings shish kebab</p>
-          <p>22 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="soup">
-      <h1 class="food-name">Soup</h1>
-      <img class="food-img" src="./images/foods/soup.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Soup Truffle Beef</p>
-          <p>25 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Soup Truffle Chicken</p>
-          <p>25 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Dumplings</p>
-          <p>25 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="stake">
-      <h1 class="food-name">Stake</h1>
-      <img class="food-img" src="./images/foods/stake.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Ribeye steak (400 gr)</p>
-          <p>71 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Teebone steak (450 gr)</p>
-          <p>79 900 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Entrecote (300 gr)</p>
-          <p>63 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="manti">
-      <h1 class="food-name">Manti</h1>
-      <img class="food-img" src="./images/foods/Manti.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Homemade manti</p>
-          <p>26 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Manti with Meat</p>
-          <p>26 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Manti with tripe</p>
-          <p>25 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Manti with Pumpkin</p>
-          <p>19 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="coffe">
-      <h1 class="food-name">Coffe</h1>
-      <img class="food-img" src="./images/foods/coffe.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>Espresso coffee</p>
-          <p>12 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>cappuccino coffee</p>
-          <p>13 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Latte</p>
-          <p>13 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Coffee Americano</p>
-          <p>13 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Coffee with cream</p>
-          <p>8 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Black coffee</p>
-          <p>8 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-    <div class="food-info" id="tea">
-      <h1 class="food-name">Tea</h1>
-      <img class="food-img" src="./images/foods/tea.jpg" alt="">
-      <div class="foods">
-        <div class="food-content">
-          <p>fruit tea</p>
-          <p>20 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Tea with lemon</p>
-          <p>10 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Tea with limber</p>
-          <p>22 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Tea with milk</p>
-          <p>8 000 UZS</p>
-        </div>
-        <div class="food-content">
-          <p>Green tea</p>
-          <p>5 000 UZS</p>
-        </div>
-        <button style="margin: 10px 0px;" class="menu-btn">Placing order</button>
-      </div>
-    </div>
-  </section>
-  <!-- End of Menu section -->
-  <div class="section-title" id="contact-link">
-    <h1>Contact</h1>
-  </div>
-  <!-- Start of Contact section -->
-  <section id="contact">
-    <div class="location">
-      <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d358111.27828294015!2d59.75745030820312!3d42.46219826239883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1suz!2s!4v1682952582219!5m2!1suz!2s"
-      width="1120" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="contact-info">
-      <a href=""><i class="fa-brands fa-telegram"></i> Telegram</a>
-      <a href=""><i class="fa-solid fa-phone"></i> +998(99)000-00-00</a>
-    </div>
-    <form>
-      <div class="form-item">
-        <label for="name">
-          Name <br>
-          <input id="name" type="text" placeholder="John Deo">
-        </label>
-        <label for="phone">
-          Phone Number <br>
-          <input id="phone" type="text" placeholder="+998(99)000-00-00">
-        </label>
-      </div>
-      <textarea placeholder="Message" cols="30" rows="10"></textarea><br>
-      <button>S e n d i n g</button>
-    </form>
-  </section>
-  <!-- End of Contact section -->
-  <!-- Start of footer -->
-  <footer class="footer">
-    <div class="first-footer">
-      <h1 class="logo">
-        Resturan <i class="fa-solid fa-utensils"></i>
-      </h1>
-      <div class="footer-item">
-        <span><i class="fa-solid fa-envelope"></i> Gmail</span>
-        <p>example@gmail.com</p>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-      </div>
-      <div class="footer-item">
-        <span><i class="fa-solid fa-location-dot"></i> Location</span>
-        <p>Karakalpakstan, Kanlikul, Diykhanabad 1 home</p>
-        <p>Lorem ipsum dolor sit amet.</p>
-      </div>
-    </div>
-    <div class="second-footer">
-        <p>Copyright &copy;2023. All Rights Reseved.</p>
+      <div class="second-footer">
+        <p>Avtorlıq huqıqı ©2023. Barlıq huqıqlar qorgalgan.</p>
         <p><i class="fa-solid fa-terminal"></i> Mukhammedali Ametov</p>
-    </div>
-  </footer>
-  <!-- End of footer -->
-  <!-- JavaScript -->
-  <script src="./js/script.js"></script>
-</body>
-
+      </div>
+    </footer>
+    <!-- End of footer -->
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>

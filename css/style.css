@@ -189,7 +189,11 @@ header .nav-head {
 
 #home .home-title{
     padding: 110px 90px;
-    width: 50%;
+    width: 70%;
+    background-color: #00000057;
+    margin: 0px 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .home-title h1{
@@ -203,6 +207,7 @@ header .nav-head {
     font-size: 1.2rem;
     color: #fff;
     padding: 0px 10px;
+    width: 70%;
 }
 
 .home-title .buttons{
@@ -257,6 +262,10 @@ header .nav-head {
         color: #ffff;
         font-family: 'Ubuntu', sans-serif;
         padding: 20px 0px;
+    }
+
+    .home-title p{
+        width: 100%;
     }
 }
 /* End of home style */
