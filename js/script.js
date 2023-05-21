@@ -1,34 +1,36 @@
-"use strict"
+"use strict";
 
-const hamburgerItem = document.querySelector('.fa-bars');
-const navMenu = document.querySelector('.nav');
-const hamburgerEl = document.querySelector('.hamburger');
-const closeNavMenu = document.querySelector('.fa-times');
-const navbarEl = document.querySelector('.navigation');
-const closeMobileMenu = document.querySelector('#closeitem')
+const hamburgerItem = document.querySelector(".fa-bars");
+const navMenu = document.querySelector(".nav");
+const hamburgerEl = document.querySelector(".hamburger");
+const closeNavMenu = document.querySelector(".fa-times");
+const navbarEl = document.querySelector(".navigation");
+const closeMobileMenu = document.querySelector("#closeitem");
 
-hamburgerItem.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
-    hamburgerEl.classList.toggle('active');
+hamburgerItem.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  hamburgerEl.classList.toggle("active");
 });
 
-closeNavMenu.addEventListener('click', () => {
-    navMenu.classList.remove('active');
-    hamburgerEl.classList.remove('active');
+closeNavMenu.addEventListener("click", () => {
+  navMenu.classList.remove("active");
+  hamburgerEl.classList.remove("active");
 });
 
 const closeMenu = () => {
-  navMenu.classList.remove('active');
-  hamburgerEl.classList.remove('active');
-}
+  navMenu.classList.remove("active");
+  hamburgerEl.classList.remove("active");
+};
 
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 var sticky = navbarEl.offsetTop;
 
 function myFunction() {
-    if (window.pageYOffset > sticky) {
-      navbarEl.classList.add("sticky");
-    } else {
-      navbarEl.classList.remove("sticky");
-    }
+  if (window.pageYOffset > sticky) {
+    navbarEl.classList.add("sticky");
+  } else {
+    navbarEl.classList.remove("sticky");
+  }
 }
